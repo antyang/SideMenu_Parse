@@ -134,7 +134,7 @@ class Chat: UIViewController, UITableViewDelegate, UITableViewDataSource, UIText
                 // Reload Tableview
                 self.messageTableView.reloadData()
             }
-            
+
         }
     }
 
@@ -165,9 +165,5 @@ class Chat: UIViewController, UITableViewDelegate, UITableViewDataSource, UIText
             }, completion: nil)
         
     }
-
-    
-    
-    
     
 }
