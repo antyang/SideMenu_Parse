@@ -8,6 +8,8 @@
 
 import UIKit
 import CoreData
+import Parse
+import Bolts
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,6 +19,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+            // Power your app with Local Datastore.
+//            Parse.enableLocalDatastore()
+            
+            // Initialize Parse.
+            Parse.setApplicationId("hanldG4chWjqpBY24BbIRlhMVdy38yrdrv5qa3f4", clientKey: "aznKmJ3J0WaKh5sQ7IvZTDSSLR2Sa2qAa3W5tXA6")
+        
+            // Track statistics around application opens.
+//            PFAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
+        
+        //        // Testing Parse
+        //        let player = PFObject(className: "User")
+        //        user.setObject("Antony", forKey: "Name")
+        //        user.setObject(1234, forKey: "Score")
+        //        user.saveInBackgroundWithBlock { (succeeded, error) -> Void in
+        //            if succeeded {
+        //                println("Object Uploaded")
+        //            } else {
+        //                println("Error: \(error) \(error!.userInfo!)")
+        //            }
+        //        }
+        
         return true
     }
 
